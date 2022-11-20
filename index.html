@@ -86,7 +86,7 @@
                 <video  width=100% height=100% muted autoplay loop>
                   <source src="images/nep_outtuo1.mp4" type="video/mp4">
                 </video></div>
-              <video  width=100% height=100% muted autoplay loop>
+              <video  width=100% height=100% muted autoplay loop id="nep1">
                 <source src="images/nep_inni1.mp4" type="video/mp4">Your browser does not support the video tag.
               </video>
               </div>
@@ -114,11 +114,11 @@
               <br>
               <em>Siggraph Asia</em>, 2022
               <br>
-              <!-- <a href="https://limacv.github.io/deblurnerf/">project page</a>
-              / -->
+              <a href="https://limacv.github.io/neuvf_web/">project page</a>
+              /
               <a href="https://arxiv.org/abs/2207.00210">arXiv</a>
-              <!-- /
-              <a href="https://limacv.github.io/deblurnerf/pdf/CVPR2022_DeblurNeRF.pdf">pdf</a> -->
+              /
+              <a href="https://limacv.github.io/neuvf_web/pdf/SIGGRAPH2022_Final.pdf">pdf</a>
               /
               <a href="https://github.com/limacv/NeUVF">code</a>
               <p></p>
@@ -178,7 +178,6 @@
             </td>
           </tr>
           
-
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -207,6 +206,49 @@
             </td>
           </tr>
           
+          <tr onmouseout="automatch_stop()" onmouseover="automatch_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+              <div class="two" id='automatch'>
+                <img src='images/automatch_after.jpg' width="160"></div>
+              <img src='images/automatch.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function automatch_start() {
+                  document.getElementById('automatch').style.opacity = "1";
+                }
+
+                function automatch_stop() {
+                  document.getElementById('automatch').style.opacity = "0";
+                }
+                automatch_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>AutoMatch: Leveraging Traffic Camera to Improve Perception and Localization of Autonomous Vehicles</papertitle>
+              <br>
+              <a href="https://yuze-he.github.io/Yuze-He/">Yuze He</a>,
+              <strong>Li Ma</strong>,
+              Jiahe Cui,
+              Zhenyu Yan,
+              <a href="https://staff.ie.cuhk.edu.hk/~glxing/">Guoliang Xing</a>,
+              Sen Wang,
+              Qintao Hu,
+              Chen Pan
+              <br>
+              <em>SenSys</em>, 2022
+              <br>
+              <a href="https://mycuhk-my.sharepoint.com/:b:/g/personal/1155136636_link_cuhk_edu_hk/EZINmTbc9SFLr-XtkNxZInYBmnhcmlz4cI8NUZC81uWQIA?e=TUDVDV">pdf</a>
+              /
+              <a href="https://mycuhk-my.sharepoint.com/:p:/g/personal/1155136636_link_cuhk_edu_hk/EfL9MUWNeaROphkbj08yNCsBpQvCtwMKUm6vEIpf6wkuSg?e=3amfUr">slides</a>
+              <p></p>
+              <p>
+                We exploit existing ubiquitous traffic cameras to assist perception and localization in autonomous driving.
+              </p>
+            </td>
+          </tr>
+
+
           <tr onmouseout="vieye_stop()" onmouseover="vieye_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -229,7 +271,7 @@
               <papertitle>VI-Eye: Semantic-based 3D Point Cloud Registration for
                           Infrastructure-assisted Autonomous Driving</papertitle>
               <br>
-              <a href="https://xiaoyu258.github.io/">Yuze He</a>,
+              <a href="https://yuze-he.github.io/Yuze-He/">Yuze He</a>,
               <strong>Li Ma</strong>,
               Zhehao Jiang,
               Yi Tang,
@@ -237,9 +279,13 @@
               <br>
               <em>MobiCom</em>, 2021
               <br>
-              <a href="https://dl.acm.org/doi/10.1145/3447993.3483276">ACM</a>
+              <a href="https://dl.acm.org/doi/10.1145/3447993.3483276">pdf</a>
               /
-              <a href="https://aiot.ie.cuhk.edu.hk/papers/VI_Eye.pdf">pdf</a>
+              <a href="https://www.youtube.com/watch?v=IYu8d8Rzy2s">fast forward</a>
+              /
+              <a href="https://mycuhk-my.sharepoint.com/:v:/g/personal/1155136636_link_cuhk_edu_hk/EfS9bjWA58lDrShdRe8cCbQB9RpNnKUpCuf5QvO0piAhAA?e=rjZMFn">presentation</a>
+              /
+              <a href="https://mycuhk-my.sharepoint.com/:p:/g/personal/1155136636_link_cuhk_edu_hk/EfUXpfbzIF1NkyEh4eLvO0gBWCENv2DhRIVdp6Q88rtVYA?e=3Uux6F">slides</a>
               <p></p>
               <p>
               We align two point clouds with little overlap using saliency points in the traffic scenario.
@@ -249,7 +295,195 @@
           
         </tbody></table>
         
-				
+				<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <heading>Other Projects</heading>
+            <p>
+              Some interesting projects that I worked on, including research projects.
+            </p>
+          </td>
+        </tr>
+      </tbody></table>
+      
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+
+        <tr onmouseout="loop3d_stop()" onmouseover="loop3d_start()"  bgcolor="#ffffd0">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+            <div class="two" id='loop3d'>
+              <video  width=100% height=100% muted autoplay loop>
+                <source src="images/loop3d_spiral.mov" type="video/mp4">Your browser does not support the video tag.
+              </video></div>
+            <video width=100% height=100% muted autoplay loop id="loop3d1">
+              <source src="images/loop3d.mov" type="video/mp4">Your browser does not support the video tag.
+            </video>
+            </div>
+            <script type="text/javascript">
+              function loop3d_start() {
+                document.getElementById('loop3d').style.display = '';
+                document.getElementById('loop3d1').style.display = 'none'
+              }
+
+              function loop3d_stop() {
+                document.getElementById('loop3d').style.display = 'none';
+                document.getElementById('loop3d1').style.display = ''
+              }
+              loop3d_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle>3D Video Loops from Asynchronous Input</papertitle>
+            <br>
+            <strong>Li Ma</strong>,
+            <a href="https://xiaoyu258.github.io/">Xiaoyu Li</a>,
+            <a href="https://liaojing.github.io/html/">Jing Liao</a>,
+            <a href="https://www.cse.ust.hk/~psander/">Pedro V. Sander</a>
+            <br>
+            <em>Research Project</em>, 2022
+            <br>
+            <a href="https://limacv.github.io/VideoLoop3D_web/">project page</a>
+            /
+            <a href="https://limacv.github.io/VideoLoopUI/">live demo</a>
+            /
+            pdf (coming soon)
+            <!-- <a href="https://limacv.github.io/deblurnerf/pdf/CVPR2022_DeblurNeRF.pdf">pdf</a> -->
+            /
+            code (coming soon)
+            <!-- <a href="https://github.com/limacv/Deblur-NeRF">code</a> -->
+            <p></p>
+            <p>
+            We construct a novel 3D looping video representation that can do novel view synthesis in real-time on an iPhone X!
+            </p>
+          </td>
+        </tr>
+      
+
+        <tr onmouseout="replate_stop()" onmouseover="replate_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+            <div class="two" id='replate'>
+              <video  width=100% height=100% muted autoplay loop>
+                <source src="images/replate.mov" type="video/mp4">Your browser does not support the video tag.
+              </video></div>
+            <img src='images/replate.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+              function replate_start() {
+                document.getElementById('replate').style.opacity = "1";
+              }
+
+              function replate_stop() {
+                document.getElementById('replate').style.opacity = "0";
+              }
+              replate_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle>The Replate</papertitle>
+            <br>
+            <strong>Li Ma</strong>,
+            Ge Chen,
+            <a href="https://www.cse.ust.hk/~psander/">Pedro V. Sander</a>
+            <br>
+              <em>Funded Project</em>, 2021
+            <br>
+            <a href="https://limacv.github.io/ReplateWidget/">project page</a>
+            /
+            <a href="https://github.com/limacv/ReplateWidget">code</a>
+            <p></p>
+            <p>
+            A Qt-based software that allows you to create infinitely looping videos from sports videos.
+            </p>
+          </td>
+        </tr>
+        
+        <tr onmouseout="monompv_stop()" onmouseover="monompv_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='monompv'>
+                <video  width=100% height=100% muted autoplay loop>
+                  <source src="images/lmpv.mov" type="video/mp4">Your browser does not support the video tag.
+                </video></div>
+              <img src='images/lmpv.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function monompv_start() {
+                  document.getElementById('monompv').style.opacity = "1";
+                }
+  
+                function monompv_stop() {
+                  document.getElementById('monompv').style.opacity = "0";
+                }
+                monompv_stop()
+              </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle>Layered Multiplane Videos for Novel View Synthesis</papertitle>
+            <br>
+              <strong>Li Ma</strong>,
+              <a href="https://liaojing.github.io/html/">Jing Liao</a>,
+              <a href="https://www.cse.ust.hk/~psander/">Pedro V. Sander</a>
+            <br>
+              <em>Failed Research Project</em>, 2021
+            <br>
+            <a href="https://limacv.github.io/mono_mpv/">project page</a>
+            /
+            <a href="https://limacv.github.io/mono_mpv/docs/pdf/ICCV21.pdf">pdf</a>
+            /
+            <a href="https://limacv.github.io/mono_mpv/docs/pdf/ICCV21_supple.pdf">supple</a>
+            /
+            <a href="https://github.com/limacv/mono_mpv">code</a>
+            <p></p>
+            <p>
+            We try to generate a temporally consistent Multiplane Video (MPV) from only monocular video 
+            to achieve space and time control. The results are not as good as expected, so I'm taking it as a failed project.
+            Still, I post this project as a constant reminder for me to evaluate the feasibility before expending too much effort.
+            </p>
+          </td>
+        </tr>
+
+        <tr onmouseout="boolgeo_stop()" onmouseover="boolgeo_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='boolgeo'>
+                <video  width=100% height=100% muted autoplay loop>
+                  <source src="images/boolgeo.mov" type="video/mp4">Your browser does not support the video tag.
+                </video></div>
+              <img src='images/boolgeo.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function boolgeo_start() {
+                  document.getElementById('boolgeo').style.opacity = "1";
+                }
+  
+                function boolgeo_stop() {
+                  document.getElementById('boolgeo').style.opacity = "0";
+                }
+                boolgeo_stop()
+              </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle>Boolean Texture Geometry</papertitle>
+            <br>
+            <strong>Li Ma</strong>
+            <br>
+              <em>Course Project</em>, 2020
+            <br>
+            <a href="https://limacv.github.io/bool_geo_project/">live demo</a>
+            /
+            <a href="https://github.com/limacv/bool_geo_project">code</a>
+            <p></p>
+            <p>
+            An interesting toy project based on Threejs that renders geometries that looks like different texts from different views.
+            </p>
+          </td>
+        </tr>
+
+      </tbody></table>
+      
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
             <td>
@@ -269,8 +503,11 @@
               <heading>Selected Awards</heading>
               <br><br>
               <li>Postgraduate Scholarship, HKUST</li>
-              <li>COMP5411 Advanced Computer Graphics, 2020-21 Fall</li>
-              <li>COMP2011 Programming with C++, 2019-20 Spring </li>
+              <li>First-Class Scholarship for Outstanding Merits, ZJU </li>
+              <li>First-Prize of the NXP Cup National University Students Intelligent Car Race (Zhejiang Division), China</li>
+              <li>Second-Prize of the NXP Cup National University Students Intelligent Car Race, China</li>
+              <li>Excellent Student Awards, ZJU </li>
+              <li>Research and Innovation Scholarship, ZJU</li>
             </td>
           </tr>
         </tbody></table>
@@ -286,8 +523,13 @@
             </td>
           </tr>
         </tbody></table>
-
-
+        
+        <table>
+            <div style="width:20%;margin:0 auto;">
+              <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=iHv3_lG2sPiCA_ZhOlZUbBWq8UsaDqV2MTUO58ufGVQ&cl=ffffff&w=a">
+              </script>
+            </div>
+        </table>
       </td>
     </tr>
   </table>

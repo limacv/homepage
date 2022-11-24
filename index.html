@@ -466,7 +466,7 @@
               </script>
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
-            <papertitle>Boolean Texture Geometry</papertitle>
+            <papertitle>Boolean Text Geometry</papertitle>
             <br>
             <strong>Li Ma</strong>
             <br>
@@ -481,6 +481,42 @@
             </p>
           </td>
         </tr>
+      
+        <tr onmouseout="car_stop()" onmouseover="car_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='car'>
+                <video  width=100% height=100% muted autoplay loop>
+                  <source src="images/car.mov" type="video/mp4">Your browser does not support the video tag.
+                </video></div>
+              <img src='images/car.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function car_start() {
+                  document.getElementById('car').style.opacity = "1";
+                }
+  
+                function car_stop() {
+                  document.getElementById('car').style.opacity = "0";
+                }
+                car_stop()
+              </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle>Intelligent Car Racing</papertitle>
+            <br>
+            Kai Wang, <strong>Li Ma</strong>, Yuze He
+            <br>
+              <em>The NXP Cup</em>, 2018
+            <br>
+            <a href="data/video1.MOV">video</a>
+            <p></p>
+            <p>
+            Exciting car racing!
+            </p>
+          </td>
+        </tr>
+
 
       </tbody></table>
       

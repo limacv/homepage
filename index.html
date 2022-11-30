@@ -77,6 +77,58 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 					
 
+          
+          <tr onmouseout="loop3d_stop()" onmouseover="loop3d_start()"  bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+              <div class="two" id='loop3d'>
+                <video  width=100% height=100% muted autoplay loop>
+                  <source src="images/loop3d_spiral.mov" type="video/mp4">Your browser does not support the video tag.
+                </video></div>
+              <video width=100% height=100% muted autoplay loop id="loop3d1">
+                <source src="images/loop3d.mov" type="video/mp4">Your browser does not support the video tag.
+              </video>
+              </div>
+              <script type="text/javascript">
+                function loop3d_start() {
+                  document.getElementById('loop3d').style.display = '';
+                  document.getElementById('loop3d1').style.display = 'none'
+                }
+
+                function loop3d_stop() {
+                  document.getElementById('loop3d').style.display = 'none';
+                  document.getElementById('loop3d1').style.display = ''
+                }
+                loop3d_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>3D Video Loops from Asynchronous Input</papertitle>
+              <br>
+              <strong>Li Ma</strong>,
+              <a href="https://xiaoyu258.github.io/">Xiaoyu Li</a>,
+              <a href="https://liaojing.github.io/html/">Jing Liao</a>,
+              <a href="https://www.cse.ust.hk/~psander/">Pedro V. Sander</a>
+              <br>
+              <em>Under Review</em>, 2022
+              <br>
+              <a href="https://limacv.github.io/VideoLoop3D_web/">project page</a>
+              /
+              <a href="https://limacv.github.io/VideoLoopUI/">live demo</a>
+              /
+              pdf (coming soon)
+              <!-- <a href="https://limacv.github.io/deblurnerf/pdf/CVPR2022_DeblurNeRF.pdf">pdf</a> -->
+              /
+              code (coming soon)
+              <!-- <a href="https://github.com/limacv/Deblur-NeRF">code</a> -->
+              <p></p>
+              <p>
+              We construct a novel 3D looping video representation that can do novel view synthesis in real-time on an iPhone X!
+              </p>
+            </td>
+          </tr>
+      
+
           <tr onmouseout="nep_stop()" onmouseover="nep_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -308,58 +360,6 @@
       
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-
-
-        <tr onmouseout="loop3d_stop()" onmouseover="loop3d_start()"  bgcolor="#ffffd0">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <div class="one">
-            <div class="two" id='loop3d'>
-              <video  width=100% height=100% muted autoplay loop>
-                <source src="images/loop3d_spiral.mov" type="video/mp4">Your browser does not support the video tag.
-              </video></div>
-            <video width=100% height=100% muted autoplay loop id="loop3d1">
-              <source src="images/loop3d.mov" type="video/mp4">Your browser does not support the video tag.
-            </video>
-            </div>
-            <script type="text/javascript">
-              function loop3d_start() {
-                document.getElementById('loop3d').style.display = '';
-                document.getElementById('loop3d1').style.display = 'none'
-              }
-
-              function loop3d_stop() {
-                document.getElementById('loop3d').style.display = 'none';
-                document.getElementById('loop3d1').style.display = ''
-              }
-              loop3d_stop()
-            </script>
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-            <papertitle>3D Video Loops from Asynchronous Input</papertitle>
-            <br>
-            <strong>Li Ma</strong>,
-            <a href="https://xiaoyu258.github.io/">Xiaoyu Li</a>,
-            <a href="https://liaojing.github.io/html/">Jing Liao</a>,
-            <a href="https://www.cse.ust.hk/~psander/">Pedro V. Sander</a>
-            <br>
-            <em>Research Project</em>, 2022
-            <br>
-            <a href="https://limacv.github.io/VideoLoop3D_web/">project page</a>
-            /
-            <a href="https://limacv.github.io/VideoLoopUI/">live demo</a>
-            /
-            pdf (coming soon)
-            <!-- <a href="https://limacv.github.io/deblurnerf/pdf/CVPR2022_DeblurNeRF.pdf">pdf</a> -->
-            /
-            code (coming soon)
-            <!-- <a href="https://github.com/limacv/Deblur-NeRF">code</a> -->
-            <p></p>
-            <p>
-            We construct a novel 3D looping video representation that can do novel view synthesis in real-time on an iPhone X!
-            </p>
-          </td>
-        </tr>
-      
 
         <tr onmouseout="replate_stop()" onmouseover="replate_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">

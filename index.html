@@ -86,7 +86,53 @@
         
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 					
+          <tr onmouseout="specnerf_stop()" onmouseover="specnerf_start()"  bgcolor="#ffffff">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+              <div class="two" id='specnerf'>
+                <img src='images/SpecNeRF_ns.jpeg' width="160"></div>
+              <!-- <div class="two" id='dreamfusion_image'>
+                <video  width=100% height=100% muted autoplay loop>
+                  <source src="images/dreamfusion.mp4" type="video/mp4">Your browser does not support the video tag.
+                </video></div> -->
+              <img src='images/specNeRF_rgb.jpeg' width="160">
+              </div>
+              <script type="text/javascript">
+                function specnerf_start() {
+                  document.getElementById('specnerf').style.opacity = "1";
+                }
 
+                function specnerf_stop() {
+                  document.getElementById('specnerf').style.opacity = "0";
+                }
+                specnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>SpecNeRF: Gaussian Directional Encoding for Specular Reflections</papertitle>
+              <br>
+              <strong>Li Ma</strong>,
+              <a href="https://notes.vasuagrawal.com/">Vasu Agrawal</a>,
+              <a href="https://haithemturki.com/">Haithem Turki</a>,
+              <a href="https://changilkim.com">Changil Kim</a>,
+							<a href="https://www.chengao.vision/">Chen Gao</a>,
+              <a href="https://www.cse.ust.hk/~psander/">Pedro V. Sander</a>,
+              <a href="https://zollhoefer.com/">Michael Zollhöfer</a>, 
+              <a href="https://richardt.name/">Christian Richardt</a>
+              <br>
+              <em>Arxiv</em>, 2023
+              <br>
+              <a href="https://limacv.github.io/SpecNeRF_web/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2312.13102">arXiv</a>
+              /
+              <a href="https://limacv.github.io/SpecNeRF_web/images/SpecNeRF.pdf">pdf</a>
+              <p></p>
+              <p>
+                We propose a Gaussian directional encoding that leads to better modeling of specular reflections under near-field lighting conditions.
+              </p>
+            </td>
+          </tr>
           
           <tr onmouseout="loop3d_stop()" onmouseover="loop3d_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">

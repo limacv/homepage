@@ -76,7 +76,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Publications</heading>
               <p>
-                Representative papers are <span class="highlight">highlighted</span>.
+                Representative papers are <span class="highlight">highlighted</span>. * indicates equal contribution.
               </p>
             </td>
           </tr>
@@ -84,6 +84,57 @@
         
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 					
+          <!-- ########################################################### -->
+          <tr onmouseout="diffrelit_stop()" onmouseover="diffrelit_start()"  bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one" style="overflow: hidden;">
+              <video  width=200% height=200% 
+                      muted autoplay loop id="diffrelit"
+                      style="position: absolute; left: -100%; top: -50%">
+                <source src="images/diffrelit.mov" type="video/mp4">
+              </video>
+              </div>
+              <script type="text/javascript">
+                function diffrelit_start() {
+                  document.getElementById('diffrelit').style.left = "0%";
+                }
+
+                function diffrelit_stop() {
+                  document.getElementById('diffrelit').style.left = "-100%";
+                }
+                diffrelit_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>DifFRelight: Diffusion-Based Facial Performance Relighting</papertitle>
+              <br>
+              <a href="https://mingminghe.com/">Mingming He*</a>,
+              <a href="mailto:pascal.clausen@scanlinevfx.com">Pascal Clausen*</a>,
+							<a href="https://leventtasel.com/">Ahmet Levent Taşel*</a>,
+              <strong>Li Ma*</strong>,
+              <a href="mailto:oliver.pilarski@scanlinevfx.com">Oliver Pilarski*</a>,
+              <a href="https://www.cs.cornell.edu/~wenqixian/">Wenqi Xian</a>,
+              <a href="mailto:laszlo.rikker@scanlinevfx.com">Laszlo Rikker</a>,
+              <a href="mailto:xueming.yu@scanlinevfx.com">Xueming Yu</a>,
+              <a href="https://ryanndagreat.github.io/">Ryan Burgert</a>,
+              <a href="https://ningyu1991.github.io/">Ning Yu</a>,
+              <a href="https://www.pauldebevec.com/Bio/">Paul Debevec</a>
+              <br>
+              <em>Siggraph Asia</em>, 2024
+              <br>
+              <a href="https://www.eyelinestudios.com/research/diffrelight.html">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2410.08188">arXiv</a>
+              /
+              <a href="https://www.eyelinestudios.com/research/diffrelight_static/pdfs/diffrelight.pdf">pdf</a>
+              <p></p>
+              <p>
+              A personalized diffusion-based relighting model that achieves photorealistic facial performance relighting.
+              </p>
+            </td>
+          </tr>
+          
+          <!-- ########################################################### -->
           <tr onmouseout="specnerf_stop()" onmouseover="specnerf_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -188,25 +239,20 @@
 
           <tr onmouseout="nep_stop()" onmouseover="nep_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-              <!-- <div class="two" id='deblurnerf'>
-                <img src='images/deblurnerf_out.png' width="160"></div> -->
-              <div class="two" id='nep'>
-                <video  width=100% height=100% muted autoplay loop>
-                  <source src="images/nep_outtuo1.mp4" type="video/mp4">
-                </video>
-              </div>
-                <video  width=100% height=100% muted autoplay loop id="nep1">
-                  <source src="images/nep_inni1.mp4" type="video/mp4">Your browser does not support the video tag.
+              <div class="one" style="overflow: hidden;">
+                <video  width=200% height=200% 
+                        muted autoplay loop id="nep"
+                        style="position: absolute; left: -100%; top: -50%">
+                  <source src="images/nep.mov" type="video/mp4">
                 </video>
               </div>
               <script type="text/javascript">
                 function nep_start() {
-                  document.getElementById('nep').style.opacity = "1";
+                  document.getElementById('nep').style.left = "0%";
                 }
 
                 function nep_stop() {
-                  document.getElementById('nep').style.opacity = "0";
+                  document.getElementById('nep').style.left = "-100%";
                 }
                 nep_stop()
               </script>

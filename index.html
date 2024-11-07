@@ -134,6 +134,53 @@
             </td>
           </tr>
           
+
+          <!-- ########################################################### -->
+          <tr onmouseout="fisheyegs_stop()" onmouseover="fisheyegs_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+              <div class="two" id='fisheyegs'>
+                <img src='images/fisheyegs_fisheye.jpeg' width="160"></div>
+              <!-- <div class="two" id='dreamfusion_image'>
+                <video  width=100% height=100% muted autoplay loop>
+                  <source src="images/dreamfusion.mp4" type="video/mp4">Your browser does not support the video tag.
+                </video></div> -->
+              <img src='images/fisheyegs_presp.jpeg' width="160">
+              </div>
+              <script type="text/javascript">
+                function fisheyegs_start() {
+                  document.getElementById('fisheyegs').style.opacity = "1";
+                }
+
+                function fisheyegs_stop() {
+                  document.getElementById('fisheyegs').style.opacity = "0";
+                }
+                fisheyegs_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Fisheye-GS: Lightweight and Extensible Gaussian Splatting Module for Fisheye Cameras</papertitle>
+              <br>
+              <a href="https://zmliao.github.io">Zimu Liao</a>,
+              Siyan Chen, Rong Fu, Yi Wang, Zhongling Su, Hao Luo, 
+              <strong>Li Ma</strong>,
+              <a href="https://eveneveno.github.io/lnxu/">Linning Xu</a>,
+              <a href="https://daibo.info/">Bo Dai</a>, 
+              Hengjie Li, Zhilin Pei, Xingcheng Zhan
+              <br>
+              <em>ECCVW</em>, 2024
+              <br>
+              <a href="https://github.com/zmliao/Fisheye-GS">project page & code</a>
+              /
+              <a href="https://arxiv.org/abs/2409.04751">arXiv</a>
+              <p></p>
+              <p>
+                Extending Gaussian Splatting to fisheye camera model, with both forward rendering and backward propagation.
+              </p>
+            </td>
+          </tr>
+          
+
           <!-- ########################################################### -->
           <tr onmouseout="specnerf_stop()" onmouseover="specnerf_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">

@@ -85,6 +85,110 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 					
           <!-- ########################################################### -->
+          <tr onmouseout="luxpostfacto_stop()" onmouseover="luxpostfacto_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one" style="overflow: hidden;">
+              <video  width=200% height=200% 
+                      muted autoplay loop id="luxpostfacto"
+                      style="position: absolute; left: -100%; top: -50%">
+                <source src="images/luxpostfactovid.mp4" type="video/mp4">
+              </video>
+              </div>
+              <script type="text/javascript">
+                function luxpostfacto_start() {
+                  document.getElementById('luxpostfacto').style.left = "-100%";
+                }
+
+                function luxpostfacto_stop() {
+                  document.getElementById('luxpostfacto').style.left = "0%";
+                }
+                luxpostfacto_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Lux Post Facto: Learning Portrait Performance Relighting with Conditional Video Diffusion and a Hybrid Dataset</papertitle>
+              <br>
+              <a href="https://yiqunmei.net//">Yiqun Mei</a>,
+              <a href="https://mingminghe.com/">Mingming He</a>,
+              <strong>Li Ma</strong>,
+              <a href="https://julienphilip.com/">Julien Philip</a>,
+              <a href="https://www.cs.cornell.edu/~wenqixian/">Wenqi Xian</a>,
+              <a href="https://www.linkedin.com/in/david-george-90703-ca">David M George</a>,
+              <a href="mailto:xueming.yu@scanlinevfx.com">Xueming Yu</a>,
+              <a href="https://www.linkedin.com/in/gabrield/">Gabriel Dedic</a>,
+							<a href="https://leventtasel.com/">Ahmet Levent Taşel</a>,
+              <a href="https://ningyu1991.github.io/">Ning Yu</a>,
+              <a href="https://engineering.jhu.edu/faculty/vishal-patel/">Vishal M. Patel</a>,
+              <a href="https://www.pauldebevec.com/Bio/">Paul Debevec</a>
+              <br>
+              <em>CVPR</em>, 2025
+              <br>
+              <a href="https://www.eyelinestudios.com/research/luxpostfacto.html">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2503.14485">arXiv</a>
+              /
+              <a href="https://www.eyelinestudios.com/research/luxpostfacto_static/pdfs/lux_post_facto.pdf">pdf</a>
+              <p></p>
+              <p>
+              A generalizable portrait video relighting method that produces both photorealistic and temporally consistent lighting effects.
+              </p>
+            </td>
+          </tr>
+          
+          
+          <!-- ########################################################### -->
+          <tr onmouseout="gowiththeflow_stop()" onmouseover="gowiththeflow_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one" style="overflow: hidden;">
+              <video  width=200% height=200% 
+                      muted autoplay loop id="gowiththeflow"
+                      style="position: absolute; left: -100%; top: -50%">
+                <source src="images/gowiththeflowvid.mov" type="video/mp4">
+              </video>
+              </div>
+              <script type="text/javascript">
+                function gowiththeflow_start() {
+                  document.getElementById('gowiththeflow').style.left = "-100%";
+                }
+
+                function gowiththeflow_stop() {
+                  document.getElementById('gowiththeflow').style.left = "0%";
+                }
+                gowiththeflow_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Go-with-the-Flow: Motion-Controllable Video Diffusion Models Using Real-Time Warped Noise</papertitle>
+              <br>
+              <a href="https://ryanndagreat.github.io/">Ryan Burgert</a>,
+              <a href="https://yuancheng-xu.github.io/">Yuancheng Xu</a>,
+              <a href="https://www.cs.cornell.edu/~wenqixian/">Wenqi Xian</a>,
+              <a href="mailto:oliver.pilarski@scanlinevfx.com">Oliver Pilarski</a>,
+              <a href="mailto:pascal.clausen@scanlinevfx.com">Pascal Clausen</a>,
+              <a href="https://mingminghe.com/">Mingming He</a>,
+              <strong>Li Ma</strong>,
+              <a href="https://yitongdeng.github.io/">Yitong Deng</a>,
+              <a href="https://scholar.google.com/citations?user=rxQDLWcAAAAJ&hl=en">Lingxiao Li</a>,
+              <a href="https://www.imdb.com/name/nm2417929/">Mohsen Mousavi</a>,
+              <a href="http://michaelryoo.com/">Michael Ryoo</a>,
+              <a href="https://www.pauldebevec.com/Bio/">Paul Debevec</a>,
+              <a href="https://ningyu1991.github.io/">Ning Yu</a>
+              <br>
+              <em>CVPR</em>, 2025 <a style="color:red;">(Oral)</a>
+              <br>
+              <a href="https://eyeline-research.github.io/Go-with-the-Flow/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2501.08331">arXiv</a>
+              /
+              <a href="https://github.com/Eyeline-Research/Go-with-the-Flow">github</a>
+              <p></p>
+              <p>
+              Fine-tuning a video model using warped nosie allows for motion control!
+              </p>
+            </td>
+          </tr>
+
+          <!-- ########################################################### -->
           <tr onmouseout="diffrelit_stop()" onmouseover="diffrelit_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one" style="overflow: hidden;">

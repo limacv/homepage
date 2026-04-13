@@ -36,9 +36,11 @@
               </p>
               
               <p>
-                My current research focuses on production-quality 3D reconstruction and video editing, with a specific emphasis on relighting.
-                During my PhD, I specialized in neural rendering and 3D scene representations. I've also engaged in some low-level image and video processing tasks, 
-                including image/video stitching, inpainting, HDR creation, style transfer, video stabilization, and optical flow estimation. 
+                My current research focuses on generative AI techniques for content creation and film production, 
+                with a particular emphasis on controllable image and video generation.
+                During my PhD, I specialized in 3D reconstruction and novel view synthesis. 
+                I have also worked extensively on low-level image and video processing tasks, 
+                including stitching, HDR imaging, style transfer, video stabilization, and optical flow estimation, among others.
               </p>
 
               <p style="text-align:center">
@@ -80,6 +82,101 @@
           </tr>
         </tbody></table>
         
+
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+					
+          <tr onmouseout="limo_stop()" onmouseover="limo_start()">
+             <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one" style="overflow: hidden;">
+              <video  width=200% height=200% playsinline
+                      muted autoplay loop id="limo"
+                      style="position: absolute; left: -100%; top: -50%">
+                <source src="images/LiMo.mov" type="video/mp4">
+              </video>
+              </div>
+              <script type="text/javascript">
+                function limo_start() {
+                  document.getElementById('limo').style.left = "-100%";
+                }
+
+                function limo_stop() {
+                  document.getElementById('limo').style.left = "0%";
+                }
+                limo_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Lighting in Motion: Spatiotemporal HDR Lighting Estimation</papertitle>
+              <br>
+              <a href="https://www.christophebolduc.ca/">Christophe Bolduc</a>,
+              <a href="https://julienphilip.com/">Julien Philip</a>,
+              <strong>Li Ma</strong>,
+              <a href="https://mingminghe.com/">Mingming He</a>,
+              <a href="https://www.pauldebevec.com/Bio/">Paul Debevec</a>,
+              <a href="https://vision.gel.ulaval.ca/~jflalonde/">Jean-François Lalonde</a>,
+              <br>
+              <em>CVPR</em>, 2026
+              <br>
+              <a href="">project page (TBD)</a>
+              /
+              <a href="https://arxiv.org/abs/2512.13597">arXiv</a>
+              /
+              <a href="">code (TBD)</a>
+              <p></p>
+              <p>
+              Given pixel coordinate and depth of light probes, estimating HDRI from videos in 4D.
+              </p>
+            </td>
+          </tr>
+
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+					
+          <tr onmouseout="retimegs_stop()" onmouseover="retimegs_start()">
+             <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one" style="overflow: hidden;">
+              <video  width=200% height=200% playsinline
+                      muted autoplay loop id="retimegs"
+                      style="position: absolute; left: -100%; top: -50%">
+                <source src="images/retime_gs.mov" type="video/mp4">
+              </video>
+              </div>
+              <script type="text/javascript">
+                function retimegs_start() {
+                  document.getElementById('retimegs').style.left = "-100%";
+                }
+
+                function retimegs_stop() {
+                  document.getElementById('retimegs').style.left = "0%";
+                }
+                retimegs_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>RetimeGS: Continuous-Time Reconstruction of 4D Gaussian Splatting</papertitle>
+              <br>
+              <a href="https://www.linkedin.com/in/xuezhen-wang/">Xuezhen Wang</a>,
+              <strong>Li Ma</strong>,
+              <a href="https://yulinshen.com/">Yulin Shen</a>,
+							<a href="https://cislab.hkust-gz.edu.cn/members/zeyu-wang/">Zeyu Wang</a>,
+              <a href="https://www.cse.ust.hk/~psander/">Pedro V. Sander</a>,
+              <br>
+              <em>CVPR</em>, 2026 <a style="color:red;">(Oral)</a>
+              <br>
+              <a href="https://william-wang2.github.io/RetimeGS/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2603.13783">arXiv</a>
+              /
+              <a href="https://arxiv.org/pdf/2603.13783">pdf</a>
+              <p></p>
+              <p>
+              Reconstruct a continuous-time 4DGS from descrete-time inputs.
+              </p>
+            </td>
+          </tr>
+
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 					
           <tr onmouseout="detailenhancegs_stop()" onmouseover="detailenhancegs_start()"  bgcolor="#ffffd0">

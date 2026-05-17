@@ -83,9 +83,53 @@
         </tbody></table>
         
 
-        
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 					
+          <tr onmouseout="bodyrelux_stop()" onmouseover="bodyrelux_start()"  bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one" style="overflow: hidden;">
+                <video  width=200% height=200% playsinline
+                        muted autoplay loop id="bodyrelux"
+                        style="position: absolute; left: 0%; top: -50%">
+                  <source src="images/bodyrelux.mp4" type="video/mp4">
+                </video>
+              </div>
+              <script type="text/javascript">
+                function bodyrelux_start() {
+                  document.getElementById('bodyrelux').style.left = "-100%";
+                }
+
+                function bodyrelux_stop() {
+                  document.getElementById('bodyrelux').style.left = "0%";
+                }
+                bodyrelux_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>BodyReLux: Temporally Consistent Full-Body Video Relighting</papertitle>
+              <br>
+              <strong>Li Ma</strong>,
+              <a href="https://mingminghe.com/">Mingming He</a>,
+              <a href="mailto:xueming.yu@scanlinevfx.com">Xueming Yu</a>,
+              <a href="https://www.linkedin.com/in/david-george-90703-ca">David M George</a>,
+							<a href="https://leventtasel.com/">Ahmet Levent Taşel</a>,
+              <a href="https://www.pauldebevec.com/Bio/">Paul Debevec</a>,
+              <a href="https://julienphilip.com/">Julien Philip</a>
+              <br>
+              <em>Siggraph</em>, 2026 (Journal Track)
+              <br>
+              <a href="">project page (TBD)</a>
+              /
+              <a href="">arXiv (TBD)</a>
+              /
+              <a href="">pdf (TBD)</a>
+              <p></p>
+              <p>
+              We achieve photorealistic and temporally consistent full-body video relighting using subject-specific video diffusion model.
+              </p>
+            </td>
+          </tr>
+          
           <tr onmouseout="limo_stop()" onmouseover="limo_start()">
              <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one" style="overflow: hidden;">
@@ -133,8 +177,6 @@
           </tr>
 
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-					
           <tr onmouseout="retimegs_stop()" onmouseover="retimegs_start()">
              <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one" style="overflow: hidden;">
@@ -178,9 +220,6 @@
             </td>
           </tr>
 
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-					
           <tr onmouseout="detailenhancegs_stop()" onmouseover="detailenhancegs_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -219,7 +258,7 @@
               <a href="mailto:oliver.pilarski@scanlinevfx.com">Oliver Pilarski</a>,
               <a href="https://www.pauldebevec.com/Bio/">Paul Debevec</a>
               <br>
-              <em>Siggraph Asia</em>, 2025
+              <em>Siggraph Asia</em>, 2025, (Journal Track)
               <br>
               <a href="https://eyeline-labs.github.io/DEGS/">project page</a>
               /
